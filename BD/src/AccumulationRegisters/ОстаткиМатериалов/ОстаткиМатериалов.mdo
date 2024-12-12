@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8c2654d-9665-40dc-bbf7-a2311f72ee81">
+  <producedTypes>
+    <selectionType typeId="fe25bf3f-192a-44a2-bcb2-ee1de30dfe1a" valueTypeId="c8f9c509-3333-4342-b1ff-90d1801a23ee"/>
+    <listType typeId="e115af96-76d1-4c0d-9ffb-528274fdd4a0" valueTypeId="9c8e5d9d-fd4a-46ef-bb85-951d1ae2cb79"/>
+    <managerType typeId="35efa445-6e7d-40f8-a626-a217dd98df07" valueTypeId="43b6f479-2767-4e8a-8dd6-dd62f67388f0"/>
+    <recordSetType typeId="196d3e1d-3d7a-46d2-9daf-b936baa8d92e" valueTypeId="4a68b845-37cd-4dea-a79b-c6f695169193"/>
+    <recordKeyType typeId="6477fe7c-b4ac-4678-ba06-c0284221a124" valueTypeId="1046be32-1cf1-446c-8e98-354d14bc5715"/>
+    <recordType typeId="cf00a14b-e7df-4def-b820-6cd9a562f8e6" valueTypeId="11d1e02e-5c14-43bd-ac72-70aa5ef834fd"/>
+  </producedTypes>
+  <name>ОстаткиМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки материалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="3480eebd-50ee-411b-91bf-fabb1f0e4fbe">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="c919b211-2baf-4c3f-affd-a7bab8d6941c">
+    <name>Материал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Материал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4b855962-1b5c-4fbd-a0a8-18333d3a44b6">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cfdae208-5ba5-4b34-bf6d-b0f268648225">
+    <name>НаборСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор свойств</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВариантыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
